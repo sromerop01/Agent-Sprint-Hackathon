@@ -11,7 +11,7 @@ Uso programatico:
 
 import os
 from dotenv import load_dotenv
-from langchain.agents import create_agent
+from langgraph.prebuilt import create_react_agent
 
 from tools_pfannenberg import buscar_producto_pfannenberg
 
@@ -52,10 +52,10 @@ SYSTEM_PROMPT = (
 model = get_model()
 tools = [buscar_producto_pfannenberg]
 
-agent = create_agent(
+agent = create_react_agent(
     model=model,
     tools=tools,
-    system_prompt=SYSTEM_PROMPT,
+    prompt=SYSTEM_PROMPT,
 )
 
 
