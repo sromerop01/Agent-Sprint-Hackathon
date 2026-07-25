@@ -22,6 +22,8 @@ def _cargar_productos() -> list[dict]:
 def _ip_cumple(ip_producto: str, ip_min: str) -> bool:
     """Compara ratings IP tipo 'IP54' vs 'IP44'. Devuelve True si el producto
     cumple o supera el mínimo pedido en ambos dígitos (polvo, agua)."""
+    if not ip_producto:
+        return True  # sin IP rating conocido (ej. Heaters), no se descarta el producto
     try:
         digitos_prod = [int(c) for c in ip_producto.replace("IP", "")[:2]]
         digitos_min = [int(c) for c in ip_min.replace("IP", "")[:2]]
@@ -62,7 +64,7 @@ def buscar_producto_pfannenberg(
             continue
         if subcategoria and p["subcategoria"].lower() != subcategoria.lower():
             continue
-        if ip_rating_min and not _ip_cumple(p.get("ip_rating") or "", ip_rating_min):
+        if ip_rating_min and not _ip_cumple(p.get("ip_rating", ""), ip_rating_min):
             continue
         specs = p.get("specs", {})
         if airflow_min_m3h and (specs.get("airflow_m3h") or 0) < airflow_min_m3h:
