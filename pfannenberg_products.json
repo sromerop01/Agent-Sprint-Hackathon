@@ -1,0 +1,99 @@
+{
+  "_nota_metodo": "Los productos de 'Filterfans - Series IP54' son REALES, sacados de products.pfannenberg.com. Los de Cooling Units y Signaling siguen siendo placeholders — repite el mismo metodo esta noche: entra a la URL de categoria, copia las tarjetas de producto (nombre, item number, specs) y peganlas aqui con el mismo formato. Cada categoria tiene specs distintas (Filterfans: airflow + cutout; Heaters: watts; Signaling: dB o colores) asi que el campo 'specs' es flexible por diseno.",
+
+  "productos": [
+    {
+      "id": "11611101050",
+      "categoria": "Thermal Management",
+      "subcategoria": "Filterfan",
+      "nombre": "PF 11000 230V IP54 Filterfan",
+      "ip_rating": "IP54",
+      "specs": {
+        "airflow_m3h": 24,
+        "cutout_mm": "92x92",
+        "voltaje": "AC 230"
+      },
+      "caso_de_uso": "Ventilacion forzada compacta para gabinetes pequenos en ambientes con polvo y salpicaduras de agua",
+      "ficha_tecnica_url": "https://products.pfannenberg.com/PF-11000-230V-IP54-Filterfan/11611101050"
+    },
+    {
+      "id": "11622101050",
+      "categoria": "Thermal Management",
+      "subcategoria": "Filterfan",
+      "nombre": "PF 22000 230V IP54 Filterfan",
+      "ip_rating": "IP54",
+      "specs": {
+        "airflow_m3h": 70,
+        "cutout_mm": "125x125",
+        "voltaje": "AC 230"
+      },
+      "caso_de_uso": "Ventilacion forzada de gama media para gabinetes de tamano estandar",
+      "ficha_tecnica_url": "https://products.pfannenberg.com/PF-22000-230V-IP54-Filterfan/11622101050"
+    },
+    {
+      "id": "11632101050",
+      "categoria": "Thermal Management",
+      "subcategoria": "Filterfan",
+      "nombre": "PF 32000 230V IP54 Filterfan",
+      "ip_rating": "IP54",
+      "specs": {
+        "airflow_m3h": 108,
+        "cutout_mm": "177x177",
+        "voltaje": "AC 230"
+      },
+      "caso_de_uso": "Ventilacion forzada para gabinetes medianos-grandes con carga termica moderada-alta",
+      "ficha_tecnica_url": "https://products.pfannenberg.com/PF-32000-230V-IP54-Filterfan/11632101050"
+    },
+    {
+      "id": "11642101050",
+      "categoria": "Thermal Management",
+      "subcategoria": "Filterfan",
+      "nombre": "PF 42500 230V IP54 Filterfan",
+      "ip_rating": "IP54",
+      "specs": {
+        "airflow_m3h": 138,
+        "cutout_mm": "223x223",
+        "voltaje": "AC 230"
+      },
+      "caso_de_uso": "Ventilacion forzada de alto caudal para gabinetes grandes",
+      "ficha_tecnica_url": "https://products.pfannenberg.com/PF-42500-230V-IP54-Filterfan/11642101050"
+    },
+    {
+      "id": "11643021055",
+      "categoria": "Thermal Management",
+      "subcategoria": "Filterfan",
+      "nombre": "PF 43000 400V IP54 Filterfan",
+      "ip_rating": "IP54",
+      "specs": {
+        "airflow_m3h": 247,
+        "cutout_mm": "223x223",
+        "voltaje": "AC 400"
+      },
+      "caso_de_uso": "Ventilacion forzada de maximo caudal, alimentacion trifasica industrial",
+      "ficha_tecnica_url": "https://products.pfannenberg.com/PF-43000-400V-IP54-Filterfan/11643021055"
+    },
+
+    {
+      "_placeholder": "COOLING UNIT - reemplazar con datos reales de https://products.pfannenberg.com/Thermal-Management/Cooling-Units/",
+      "id": "PF-CU-PLACEHOLDER",
+      "categoria": "Thermal Management",
+      "subcategoria": "Cooling Unit",
+      "nombre": "Green Series DTx 6000 - completar specs reales",
+      "ip_rating": "IP55",
+      "specs": { "capacidad_enfriamiento_w": null },
+      "caso_de_uso": "Enfriamiento cerrado para gabinetes sellados",
+      "ficha_tecnica_url": "https://products.pfannenberg.com/Thermal-Management/Cooling-Units/Green-Series-DTx-6000/"
+    },
+    {
+      "_placeholder": "SIGNALING - reemplazar con datos reales de https://products.pfannenberg.com/Signaling-Technologies/",
+      "id": "PF-SIG-PLACEHOLDER",
+      "categoria": "Signaling Technology",
+      "subcategoria": "StackLight",
+      "nombre": "Completar con modelo real",
+      "ip_rating": null,
+      "specs": { "colores_disponibles": [] },
+      "caso_de_uso": "Alerta visual de estado de maquina/temperatura",
+      "ficha_tecnica_url": "https://products.pfannenberg.com/Signaling-Technologies/"
+    }
+  ]
+}
