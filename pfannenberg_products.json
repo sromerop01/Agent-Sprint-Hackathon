@@ -1,6 +1,5 @@
 {
-  "_nota_metodo": "Los productos de 'Filterfans - Series IP54' son REALES, sacados de products.pfannenberg.com. Los de Cooling Units y Signaling siguen siendo placeholders — repite el mismo metodo esta noche: entra a la URL de categoria, copia las tarjetas de producto (nombre, item number, specs) y peganlas aqui con el mismo formato. Cada categoria tiene specs distintas (Filterfans: airflow + cutout; Heaters: watts; Signaling: dB o colores) asi que el campo 'specs' es flexible por diseno.",
-
+  "_nota_metodo": "Todos los productos aqui son REALES, sacados de products.pfannenberg.com. Metodo usado: 1) entrar a la pagina de categoria/serie para ver el listado con specs resumidas, 2) para specs completas (IP, dB, dimensiones), entrar a la pagina individual del producto -> tiene una tabla 'Technical Data' ya estructurada. Repite esto para las series que falten (Heaters, Air/Water Heat Exchangers, Visual Signaling, etc.) si quieres mas variedad.",
   "productos": [
     {
       "id": "11611101050",
@@ -72,28 +71,151 @@
       "caso_de_uso": "Ventilacion forzada de maximo caudal, alimentacion trifasica industrial",
       "ficha_tecnica_url": "https://products.pfannenberg.com/PF-43000-400V-IP54-Filterfan/11643021055"
     },
-
     {
-      "_placeholder": "COOLING UNIT - reemplazar con datos reales de https://products.pfannenberg.com/Thermal-Management/Cooling-Units/",
-      "id": "PF-CU-PLACEHOLDER",
+      "id": "13824241055",
       "categoria": "Thermal Management",
       "subcategoria": "Cooling Unit",
-      "nombre": "Green Series DTx 6000 - completar specs reales",
+      "nombre": "Green Series DTFS 6021 230V Side or Fully Recessed Cooling Unit",
       "ip_rating": "IP55",
-      "specs": { "capacidad_enfriamiento_w": null },
-      "caso_de_uso": "Enfriamiento cerrado para gabinetes sellados",
-      "ficha_tecnica_url": "https://products.pfannenberg.com/Thermal-Management/Cooling-Units/Green-Series-DTx-6000/"
+      "specs": {
+        "capacidad_enfriamiento_w": 450,
+        "voltaje": "AC 230 1~",
+        "controlador": "LED"
+      },
+      "caso_de_uso": "Enfriamiento cerrado de gama baja para gabinetes sellados de tamano pequeno-mediano",
+      "ficha_tecnica_url": "https://products.pfannenberg.com/Green-Series-DTFS-6021-230V-Side-or-Fully-Recessed-Cooling-Unit/13824241055"
     },
     {
-      "_placeholder": "SIGNALING - reemplazar con datos reales de https://products.pfannenberg.com/Signaling-Technologies/",
-      "id": "PF-SIG-PLACEHOLDER",
+      "id": "13824341055",
+      "categoria": "Thermal Management",
+      "subcategoria": "Cooling Unit",
+      "nombre": "Green Series DTFS 6031 230V Side or Fully Recessed Cooling Unit",
+      "ip_rating": "IP55",
+      "specs": {
+        "capacidad_enfriamiento_w": 670,
+        "voltaje": "AC 230 1~",
+        "controlador": "LED"
+      },
+      "caso_de_uso": "Enfriamiento cerrado de gama media para gabinetes sellados",
+      "ficha_tecnica_url": "https://products.pfannenberg.com/Green-Series-DTFS-6031-230V-Side-or-Fully-Recessed-Cooling-Unit/13824341055"
+    },
+    {
+      "id": "13824441055",
+      "categoria": "Thermal Management",
+      "subcategoria": "Cooling Unit",
+      "nombre": "Green Series DTFS 6041 230V Side or Fully Recessed Cooling Unit",
+      "ip_rating": "IP55",
+      "specs": {
+        "capacidad_enfriamiento_w": 940,
+        "voltaje": "AC 230 1~",
+        "controlador": "LED"
+      },
+      "caso_de_uso": "Enfriamiento cerrado de mayor capacidad para gabinetes sellados con carga termica alta",
+      "ficha_tecnica_url": "https://products.pfannenberg.com/Green-Series-DTFS-6041-230V-Side-or-Fully-Recessed-Cooling-Unit/13824441055"
+    },
+    {
+      "id": "23111100001",
       "categoria": "Signaling Technology",
-      "subcategoria": "StackLight",
-      "nombre": "Completar con modelo real",
+      "subcategoria": "Audible Signaling",
+      "nombre": "DS 10 Sounder DNV",
+      "ip_rating": "IP66/67",
+      "specs": {
+        "sonido_db": 114,
+        "voltaje": "230V AC",
+        "temp_operacion": "-40C a +55C",
+        "dimensiones_mm": "133x170x143"
+      },
+      "caso_de_uso": "Alarma sonora industrial de alta potencia para interiores y exteriores, apta para alerta de incendio (certificada VdS y EN 54-3)",
+      "ficha_tecnica_url": "https://products.pfannenberg.com/DS-10-Sounder-DNV/23111100001"
+    },
+    {
+      "id": "17040310007",
+      "categoria": "Thermal Management",
+      "subcategoria": "Heater",
+      "nombre": "FLH-T 400 230V Fan Heater With Thermostat",
       "ip_rating": null,
-      "specs": { "colores_disponibles": [] },
-      "caso_de_uso": "Alerta visual de estado de maquina/temperatura",
-      "ficha_tecnica_url": "https://products.pfannenberg.com/Signaling-Technologies/"
+      "specs": {
+        "potencia_w": 400,
+        "voltaje": "AC 230",
+        "termostato_integrado": true
+      },
+      "caso_de_uso": "Calefaccion con ventilador para gabinetes electricos grandes, previene condensacion y corrosion por bajas temperaturas",
+      "ficha_tecnica_url": "https://products.pfannenberg.com/FLH-T-400-230V-Fan-Heater-With-Thermostat/17040310007"
+    },
+    {
+      "id": "17080310007",
+      "categoria": "Thermal Management",
+      "subcategoria": "Heater",
+      "nombre": "FLH-T 800 230V Fan Heater With Thermostat",
+      "ip_rating": null,
+      "specs": {
+        "potencia_w": 800,
+        "voltaje": "AC 230",
+        "termostato_integrado": true
+      },
+      "caso_de_uso": "Calefaccion con ventilador de mayor potencia para gabinetes grandes en ambientes frios",
+      "ficha_tecnica_url": "https://products.pfannenberg.com/FLH-T-800-230V-Fan-Heater-With-Thermostat/17080310007"
+    },
+    {
+      "id": "17099315007",
+      "categoria": "Thermal Management",
+      "subcategoria": "Heater",
+      "nombre": "FLH-T 1000 115V Fan Heater With Thermostat",
+      "ip_rating": null,
+      "specs": {
+        "potencia_w": 1000,
+        "voltaje": "AC 115",
+        "termostato_integrado": true
+      },
+      "caso_de_uso": "Calefaccion de maxima potencia de la serie FLH-T, usada en sectores exigentes como energia eolica y telecomunicaciones",
+      "ficha_tecnica_url": "https://products.pfannenberg.com/FLH-T-1000-115V-Fan-Heater-With-Thermostat/17099315007"
+    },
+    {
+      "id": "21510103055",
+      "categoria": "Signaling Technology",
+      "subcategoria": "Visual Signaling",
+      "nombre": "Pyra PY X-S-05 Compact Flashing Light (Yellow, Xenon)",
+      "ip_rating": null,
+      "specs": {
+        "tipo_lampara": "XENON",
+        "color_lente": "Amarillo",
+        "voltaje": "230V AC",
+        "temp_operacion": "-40C a +55C"
+      },
+      "caso_de_uso": "Luz de destello compacta para alerta visual de advertencia en maquinaria industrial",
+      "ficha_tecnica_url": "https://products.pfannenberg.com/Pyra-PY-X-S-05-Compact-Flashing-Light/21510103055"
+    },
+    {
+      "id": "21510801055",
+      "categoria": "Signaling Technology",
+      "subcategoria": "Visual Signaling",
+      "nombre": "Pyra PY X-S-05 Compact Flashing Light (Clear, Xenon, 24V DC)",
+      "ip_rating": null,
+      "specs": {
+        "tipo_lampara": "XENON",
+        "color_lente": "Transparente",
+        "voltaje": "24V DC",
+        "temp_operacion": "-40C a +55C"
+      },
+      "caso_de_uso": "Luz de destello compacta para uso en sistemas de bajo voltaje (24V DC), tipico en automatizacion industrial",
+      "ficha_tecnica_url": "https://products.pfannenberg.com/Pyra-PY-X-S-05-Compact-Flashing-Light/21510801055"
+    },
+    {
+      "id": "21510154055",
+      "categoria": "Signaling Technology",
+      "subcategoria": "Visual Signaling",
+      "nombre": "Pyra PY X-S-05 Compact Flashing Light (Amber, Xenon, certificada incendio)",
+      "ip_rating": null,
+      "specs": {
+        "tipo_lampara": "XENON",
+        "color_lente": "Ambar",
+        "voltaje": "115V AC",
+        "temp_operacion": "-40C a +55C",
+        "dimensiones_mm": "86x110x81",
+        "visibilidad_max_m": 164
+      },
+      "caso_de_uso": "Luz de destello certificada EN54-23 y VDS, apta para alerta de incendio con alta visibilidad (164m)",
+      "ficha_tecnica_url": "https://products.pfannenberg.com/Pyra-PY-X-S-05-Compact-Flashing-Light/21510154055"
     }
   ]
 }
