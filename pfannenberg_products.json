@@ -135,7 +135,7 @@
       "nombre": "FLH-T 400 230V Fan Heater With Thermostat",
       "ip_rating": null,
       "specs": {
-        "potencia_w": 400,
+        "potencia_w": 450,
         "voltaje": "AC 230",
         "termostato_integrado": true
       },
