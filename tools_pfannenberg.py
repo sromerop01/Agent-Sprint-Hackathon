@@ -62,7 +62,7 @@ def buscar_producto_pfannenberg(
             continue
         if subcategoria and p["subcategoria"].lower() != subcategoria.lower():
             continue
-        if ip_rating_min and not _ip_cumple(p.get("ip_rating", ""), ip_rating_min):
+        if ip_rating_min and not _ip_cumple(p.get("ip_rating") or "", ip_rating_min):
             continue
         specs = p.get("specs", {})
         if airflow_min_m3h and (specs.get("airflow_m3h") or 0) < airflow_min_m3h:
@@ -87,7 +87,7 @@ def buscar_producto_pfannenberg(
         specs_txt = ", ".join(f"{k}={v}" for k, v in p.get("specs", {}).items() if v)
         lineas.append(
             f"- {p['nombre']} ({p['subcategoria']}) | ID: {p['id']} | "
-            f"IP: {p.get('ip_rating', 'N/D')} | {specs_txt} | "
+            f"IP: {p.get('ip_rating') or 'N/D'} | {specs_txt} | "
             f"Uso: {p['caso_de_uso']}"
         )
     return "Productos encontrados:\n" + "\n".join(lineas)
