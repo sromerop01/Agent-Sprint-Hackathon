@@ -22,6 +22,8 @@ def _cargar_productos() -> list[dict]:
 def _ip_cumple(ip_producto: str, ip_min: str) -> bool:
     """Compara ratings IP tipo 'IP54' vs 'IP44'. Devuelve True si el producto
     cumple o supera el mínimo pedido en ambos dígitos (polvo, agua)."""
+    if not ip_producto:
+        return True  # sin IP rating conocido (ej. Heaters), no se descarta el producto
     try:
         digitos_prod = [int(c) for c in ip_producto.replace("IP", "")[:2]]
         digitos_min = [int(c) for c in ip_min.replace("IP", "")[:2]]
@@ -87,7 +89,7 @@ def buscar_producto_pfannenberg(
         specs_txt = ", ".join(f"{k}={v}" for k, v in p.get("specs", {}).items() if v)
         lineas.append(
             f"- {p['nombre']} ({p['subcategoria']}) | ID: {p['id']} | "
-            f"IP: {p.get('ip_rating', 'N/D')} | {specs_txt} | "
+            f"IP: {p.get('ip_rating') or 'N/D'} | {specs_txt} | "
             f"Uso: {p['caso_de_uso']}"
         )
     return "Productos encontrados:\n" + "\n".join(lineas)
